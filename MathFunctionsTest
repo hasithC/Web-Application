@@ -1,0 +1,17 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class MathFunctionsTest {
+
+    @Test
+    public void testSum() {
+        double[] values = {1.0, 2.0, 3.0};
+        assertEquals(6.0, MathFunctions.sum(values));
+    }
+
+    @Test
+    public void testAverage() {
+        double[] values = {1.0, 2.0, 3.0};
+        assertEquals(2.0, MathFunctions.average(values));
+    }
+}

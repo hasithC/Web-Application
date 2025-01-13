@@ -1,0 +1,11 @@
+public class SpreadsheetService {
+    private Map<String, Cell> spreadsheet = new HashMap<>();
+
+    public void saveSpreadsheet() {
+        // Implement file/database saving logic here
+    }
+
+    public void loadSpreadsheet() {
+        // Implement file/database loading logic here
+    }
+}

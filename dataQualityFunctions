@@ -1,0 +1,22 @@
+public class DataQualityFunctions {
+
+    public static String trim(String text) {
+        return text.trim();
+    }
+
+    public static String toUpperCase(String text) {
+        return text.toUpperCase();
+    }
+
+    public static String toLowerCase(String text) {
+        return text.toLowerCase();
+    }
+
+    public static List<String> removeDuplicates(List<String> values) {
+        return values.stream().distinct().collect(Collectors.toList());
+    }
+
+    public static String findAndReplace(String text, String find, String replace) {
+        return text.replace(find, replace);
+    }
+}

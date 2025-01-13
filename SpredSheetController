@@ -1,0 +1,17 @@
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api/spreadsheet")
+public class SpreadsheetController {
+
+    @PostMapping("/update")
+    public void updateCell(@RequestBody CellUpdateRequest request) {
+        // Logic to update the cell value and recalculate dependencies
+    }
+
+    @GetMapping("/calculate")
+    public double calculateSum(@RequestParam String range) {
+        // Implement SUM, AVERAGE, MAX, etc. here
+        return 0.0; // Example placeholder
+    }
+}

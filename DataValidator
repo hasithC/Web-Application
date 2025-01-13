@@ -1,0 +1,11 @@
+public class DataValidator {
+
+    public static boolean isValidNumber(String input) {
+        try {
+            Double.parseDouble(input);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
+}
